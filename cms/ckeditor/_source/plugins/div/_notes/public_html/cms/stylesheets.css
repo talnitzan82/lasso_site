@@ -1,0 +1,217 @@
+@charset "utf-8";
+body {
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-family:arial;
+}
+html {
+	background-color: #CCC;
+}
+button {
+	cursor:pointer;
+	border:0;
+	margin:0;
+	padding:0;
+	background:transparent;
+}
+a img {
+	border:0;
+}
+.CONTAINER {
+	height:100%;
+	background-color:#fff;
+	/*
+	margin: auto;
+	width: 1000px;
+	*/
+}
+.TOP {
+	background-color: #036;
+	height: 100px;
+	background-image:url(images/topbg.png);
+	background-repeat:repeat-x;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-right: 50px;
+}
+.MIDDLE {
+	width: 90%;
+	margin:auto;
+}
+.TABLE {
+}
+.TABLE table {
+	width: 100%;
+	border-collapse:collapse;
+}
+.TH1 {
+	width: 20px;
+	font-size: 10px;
+	
+}
+.TH3 {
+	width: 100px;
+}
+.TH5 {
+	width: 30px;
+}
+.TH4 {
+	width: 200px;
+}
+.TRH {
+	background-color: #afafaf;
+	height: 40px;
+	text-align: left;
+	background-image: url(images/tbg.png);
+	background-repeat: repeat-x;
+	
+}
+.THB {
+	border-right:1px solid #CCC;
+	padding:4px;
+}
+.TDBG1 {
+	background-color: #e8e8e8;
+	border-bottom: 1px solid #ccc;
+}
+.TDBG2 {
+	background-color: #eeeeee;
+	border-bottom: 1px solid #ccc;
+}
+.TDBG2:hover, .TDBG1:hover {
+	background-color:#fff;
+}
+.INTEXT {
+	width: 250px;
+	border: 1px solid #999;
+	font-size:12px;
+}
+.ABTN {
+	background-image: url(images/btnbg.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	padding-right: 10px;
+	padding-left: 10px;
+	border:0;
+	cursor:pointer;
+	color:#fff;
+	height:28px;
+	padding-bottom:4px;
+}
+.TEXTINPUT {
+	background-image: url(images/textinput.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 32px;
+	width: 725px;
+	border: 0;
+	padding: 2px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size: 25px;
+	color: #000;
+}
+.TEXTINPUT2 {
+	background-image: url(images/textinput2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 26px;
+	width: 355px;
+	border: 0;
+	padding: 2px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size: 16px;
+	color: #000;
+	padding-top: 0px;
+}
+.PTITLE {
+	font-size: 18px;
+}
+.PTABLE {
+	font-size: 18px;
+	color: #4B4B4B;
+}
+.PTABLE textarea {
+	height: 100px;
+	width: 830px;
+	font-size: 17px;
+	font-family: arial;
+}
+.PLINK {
+	font-size: 14px;
+}
+.DELIMAGE {
+	cursor: pointer;
+}
+.FOOTER {
+	text-align: center;
+	background-color: #CCC;
+	margin-top: 30px;
+	bottom:0;
+	width:100%;
+	height:30px;
+	padding-top:20px;
+}
+.ACTIONS {
+	float: right;
+	text-align: center;
+	margin-left:10px;
+	color: #FFF;
+}
+.ACTIONS a{
+	text-decoration:none;
+	color:#fff;
+}
+.PTABLE  textarea.TEXTA {
+	font-size: 12px;
+}
+.LOGINBG {
+	width: 525px;
+	background-image: url(images/loginimage.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 258px;
+	margin: AUTO;
+}
+
+.LOGINBG td {
+	padding-left: 20px;
+	color:#000;
+}
+.LOGINBG th {
+	color: #000;
+	height: 30px;
+	text-align:center;
+}
+.BLOCK {
+	text-decoration: none;
+	color: #FFF;
+	display: inline-block;
+	font-size: 13px;
+	padding-top: 5px;
+}
+.DELIMAGE1 ,.DELIMAGE2, .DELFILE1 ,.DELFILE2 {
+	cursor:pointer;
+}
+.PADD {
+	width:19px;
+	height:20px;
+	border:0;
+	cursor:pointer;
+	background:transparent;
+	background-image:url(images/add.png);
+	font-size:0px;
+	color:#fff;
+	position:relative;
+	top:-3px;
+	
+}
+.GIMG {
+	width:100px;
+}
+.CATEDIV {
+	float:right;
+	width:200px;
+}

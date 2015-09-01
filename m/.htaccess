@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+ErrorDocument 404 /404.php
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule .* htaccess.php [L]
+
+

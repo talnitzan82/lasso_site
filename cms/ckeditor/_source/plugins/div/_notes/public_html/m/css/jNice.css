@@ -1,0 +1,135 @@
+/* -------------
+ * Radios
+ * ------------- */
+.jRadioWrapper { float: left; z-index: 2; display:block; width:23px; position:relative; height:23px; margin:0 10px 0 0; }
+.jNiceRadio {
+	background: url(../img/custom-radio.html) no-repeat 0 0;
+	height: 23px;
+	width: 23px;
+	overflow:hidden;
+	cursor:pointer;
+	display:block;
+}
+.jNiceRadio.jNiceChecked { background-position:0 100%;}
+
+/* -------------
+ * Checkboxes
+ * ------------- */
+.jNiceCheck { display:block; font-size:0;}
+.jNiceCheckbox {
+	background: url(../img/checkboxes.png) no-repeat 0 -54px;
+	height: 14px;
+	width: 14px;
+	display:block;
+	cursor:pointer;
+	position:absolute;
+	right:0;
+	top:3px;
+}
+
+/* -------------
+ * Checked - Used for both Radio and Checkbox
+ * ------------- */
+.jNiceCheckbox.jNiceChecked { background-position:0 -81px;}
+.dark-gray .jNiceCheckbox { background-position:0 0;}
+.dark-gray .jNiceCheckbox.jNiceChecked { background-position:0 -27px;}
+
+/* -------------
+ * Selects
+ * ------------- */
+.jNiceWrapper select {border:none;margin:0;padding:0;}
+.jNiceSelectWrapper select { display:none; visibility:hidden;}
+
+/**************************** CSS For Customize Selectbox ***********************************/
+
+/* -------------
+ * Selects
+ * ------------- */
+.jNiceSelectWrapper {
+	display:block;
+	position:relative;
+	height: 30px;
+	float:left;
+	width:200px;
+	border:1px solid #ababab;
+	background:#fff;
+	overflow-x:hidden;
+	-webkit-border-radius:2px; -moz-border-radius:2px; border-radius:2px; -webkit-box-shadow: inset 3px 0 2px 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset 3px 0 2px 1px rgba(0, 0, 0, 0.1); box-shadow: inset 3px 0 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.jNiceSelectWrapper div span {
+	float: none;
+	height: 30px;
+	color: #666;
+	line-height:30px;
+	padding:0 35px 0 10px;
+	overflow: hidden;
+	font-size:14px;
+	display:block;
+	width:200%;
+}
+
+.jNiceSelectWrapper div a {
+	display: block;
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	border-left:1px solid #b0b0b0;
+	background: url(../img/custom-arrow.html) no-repeat center center #fff;
+}
+
+.jNiceSelectWrapper2 div a {
+	display: block;
+	position: absolute;
+	border-left:1px solid #b0b0b0;
+	top:0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	background: url(../img/custom-arrow.html) no-repeat center center #fff;
+}
+
+.jNiceSelectWrapper ul {
+	position: absolute;
+	background:#fff;
+	color:#666;
+	top: 32px;
+	left: -1px;
+	list-style: none;
+	display: none;
+	padding:3px 0;
+	z-index:999999;
+	width:100%;
+	border:1px solid #b0b0b0;
+	max-height:122px;
+	overflow:auto;
+}
+
+.jNiceSelectWrapper ul li { display:list-item;}
+
+
+.jNiceSelectWrapper ul a {
+	display: block;
+	padding:0 10px 0 10px;
+	text-decoration: none;
+	color: #666;
+	line-height:20px;
+}
+
+.jNiceSelectWrapper ul a:hover { color:#666;}
+.jNiceSelectWrapper ul a.selected { color:#666;}
+.custsmall .jNiceSelectWrapper { float:left; width:128px;}
+
+/******************** End CSS For Customize Form Element ***********************/
+
+.jNiceFocus { border: dotted 1px #666666; }
+
+.jNiceHidden {opacity:0;z-index:-1;position:absolute; left:-9999px;}
+.jNiceWrapper {position:relative;vertical-align:top;}
+.jNiceWrapper input {outline:none;moz-outline:none;}
+
+.reports_form .jNiceSelectWrapper { height:26px;}
+.reports_form .jNiceSelectWrapper div span { height: 26px; line-height:26px;}
+.reports_form .jNiceSelectWrapper div a, .reports_form .jNiceSelectWrapper2 div a { width: 26px; height: 26px; background-image:url(../img/custom-arrow-small.html);}

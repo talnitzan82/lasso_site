@@ -1,0 +1,129 @@
+@charset "utf-8";
+* {
+	margin:0;
+	padding:0;
+	font-family:arial;
+}
+body {
+	font-size:13px;
+}
+ul.ERRORS {
+	margin-left:30px;
+	font-size:14px;
+}
+.CONTAINER {
+	/*width: 900px;*/
+	padding:20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.TRACKLIST {
+	width:100%;
+}
+.TRACKLIST , .TRACKLIST td, .TRACKLIST th {
+	border: 1px solid #ccc;
+	padding:4px;
+	border-collapse:collapse;
+	text-align: center;
+}
+.TRACKLIST tr th {
+	font-size: 14px;
+	background-color:#66bde8;
+}
+.TSR {
+	font-size: 13px;
+	text-align: center;
+}
+.TSMALL {
+	font-size: 12px;
+}
+.TSH {
+	font-size: 11px;
+}
+input[type="text"] , input[type="password"]{
+	border: 1px solid #CCC;
+	font-size: 12px;
+	height: 19px;
+	width: 250px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+.ADDURL {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.TRACKLIST2 {
+	width:100%;
+}
+.TRACKLIST2 , .TRACKLIST2 td, .TRACKLIST2 th {
+	border: 1px solid #ccc;
+	padding:4px;
+	border-collapse:collapse;
+	text-align: center;
+	background-color:#FCFFD5;
+}
+.TRACKLIST2 tr th {
+	font-size: 12px;
+	background-color:#E8E8E8;
+}
+.TSR {
+	font-size: 13px;
+	text-align: center;
+}
+.TSMALL {
+	font-size: 12px;
+}
+.TSH {
+	font-size: 11px;
+}
+.FOOTER {
+	font-size: 12px;
+	text-align: center;
+	padding-top: 40px;
+}
+.TOOLBAR {
+	font-size: 12px;
+	color: #000;
+	background-color: #CCC;
+	height: 31px;
+}
+button {
+	background:transparent;
+	border:0;
+	cursor:pointer;
+}
+.TOOLBAR ul li {
+	float: left;
+	list-style: none;
+}
+.TOOLBAR ul li button{
+	border-right: 1px solid #fff;
+	padding: 5px;
+	margin: 1px;
+	background-color: #D9ECFF;
+}
+.BUTTON {
+	background-color: #333;
+	color: #FFF;
+	margin: 2px;
+	padding:3px;
+}
+td.TDF {
+	background-color:#E5E5E5;
+	text-align: right;
+}
+.MENU {
+	border: 1px solid #999;
+	height: 30px;
+	background-color: #DDEDFF;
+}
+.MENU ul li {
+	list-style-type: none;
+	float: left;
+	margin: 6px;
+}
+.MENU ul li a {
+	color: #000;
+	text-decoration: none;
+}

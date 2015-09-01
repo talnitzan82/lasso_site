@@ -1,0 +1,1 @@
+    <h1 class="brand1"><a href="<?=$root?>">לוק <span>צלמים</span></a></h1>
