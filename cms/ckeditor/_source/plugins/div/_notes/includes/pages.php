@@ -370,7 +370,7 @@ while($row=mysql_fetch_assoc($query)) {
 	$link = $row['mod_rewrite'];
 ?>
 <url>
-  <loc>http://<?=$_SERVER['SERVER_NAME'].'/'.$link?></loc>
+  <loc>https://<?=$_SERVER['SERVER_NAME'].'/'.$link?></loc>
 </url>
 <?
 }

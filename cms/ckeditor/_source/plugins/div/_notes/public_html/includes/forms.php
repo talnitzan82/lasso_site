@@ -21,7 +21,7 @@ if (isset($_POST['sendtofriend'])) {
 	$name    = $_POST['name'];
 	$subject = str_replace(array("/","\\"),array("",""),$_POST['subject']);
 
-	$message = str_replace(array("\\","קישור לעמוד זה"),array("",'<a href="http://'.$_SERVER['SERVER_NAME'].urldecode($_SERVER['REQUEST_URI']).'">'.$_POST['pagename'].'</a>'),$_POST['message']);
+	$message = str_replace(array("\\","קישור לעמוד זה"),array("",'<a href="https://'.$_SERVER['SERVER_NAME'].urldecode($_SERVER['REQUEST_URI']).'">'.$_POST['pagename'].'</a>'),$_POST['message']);
 	
 	if ($to!='' && $subject!='' && $message!= '') {
 		$sender = 'info@lasso.co.il';

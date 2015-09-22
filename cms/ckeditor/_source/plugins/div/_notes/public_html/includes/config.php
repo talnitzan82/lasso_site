@@ -12,7 +12,7 @@ $global = $database->fetch("SELECT * FROM global WHERE language = '$lang'");
 $dots_count = explode(".",$_SERVER['SERVER_NAME']);
 if (count($dots_count) < 4) {
 	header("HTTP/1.1 301 Moved Permanently");
-	header("location: http://www.".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);	
+	header("location: https://www.".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
 }
 ### HANDLE WWW ####
 if (preg_match('/m.lasso/',$_SERVER['HTTP_REFERER'])) {
@@ -26,6 +26,6 @@ if( $detect->isMobile() && !$detect->isTablet() && $_SESSION['mobile']!='no'){
 	} else {
 		array_unshift($dots_count,'m');
 	}
-	header("location: http://".implode(".",$dots_count).$_SERVER['REQUEST_URI']);
+	header("location: https://".implode(".",$dots_count).$_SERVER['REQUEST_URI']);
 }
 ?>

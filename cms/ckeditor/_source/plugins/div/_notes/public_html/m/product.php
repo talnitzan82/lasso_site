@@ -71,13 +71,13 @@ if ($_SERVER['REQUEST_URI']!='/404.php') {
 <div class="m-wrap" data-role="page">
 	<div class="m-header" data-role="header" data-position="fixed" data-fullscreen="true">
     	<div class="m-header-logo" style="width:20%; cursor:pointer">
-        	<a href="<?=$lasturl?>"><img src="http://www.lasso.co.il/img/logo.png" alt="" style="width:40px;"><br>בחזרה ללאסו</a>
+        	<a href="<?=$lasturl?>"><img src="https://www.lasso.co.il/img/logo.png" alt="" style="width:40px;"><br>בחזרה ללאסו</a>
         </div>  
         <div class="m-header-product-logo">
         	<?
 			$image = mysql_fetch_assoc($database->query("SELECT image FROM gallery WHERE sub = '{$page['id']}' AND logo = 'yes' LIMIT 1"));
 			?>
-			<a href="" class="sub-button<?=($image['image']!='') ? ' sub-button2' : ''?>"><span><?=($image['image']!='') ? '<img src="http://www.lasso.co.il/'.$image['image'].'" alt="'.$page['name'].'">' : '<span style="font-size:40px;padding-top:18px; padding-left:10px; display:inline-block">'.$page['name'].'</span>'?></span></a>         
+			<a href="" class="sub-button<?=($image['image']!='') ? ' sub-button2' : ''?>"><span><?=($image['image']!='') ? '<img src="https://www.lasso.co.il/'.$image['image'].'" alt="'.$page['name'].'">' : '<span style="font-size:40px;padding-top:18px; padding-left:10px; display:inline-block">'.$page['name'].'</span>'?></span></a>
         </div>                
     </div>
     <div class="m-index">
@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_URI']!='/404.php') {
               $query = $database->query($sql);
               while($row=mysql_fetch_assoc($query)) {
               ?>
-              <li><a href="http://www.lasso.co.il/<?=$row['image']?>" class="touchthumb"><img src="http://www.lasso.co.il/<?=$row['image']?>" alt="<?=$page['name']?>" /></a></li>
+              <li><a href="https://www.lasso.co.il/<?=$row['image']?>" class="touchthumb"><img src="https://www.lasso.co.il/<?=$row['image']?>" alt="<?=$page['name']?>" /></a></li>
               <?
               }
               ?>
@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_URI']!='/404.php') {
               $query = $database->query($sql);
               while($row=mysql_fetch_assoc($query)) {
               ?>
-              <a data-slide-index="<?=$i?>" href=""><img src="http://www.lasso.co.il/<?=$row['image']?>" alt="<?=$page['name']?>"/></a>
+              <a data-slide-index="<?=$i?>" href=""><img src="https://www.lasso.co.il/<?=$row['image']?>" alt="<?=$page['name']?>"/></a>
               <?
               $i++;
               }
@@ -193,7 +193,7 @@ if ($_SERVER['REQUEST_URI']!='/404.php') {
                         }
                         ?>
                         <div class="span<?=$spani?> relative"><a href="<?=$pagename?>?שלח" class="idx-buttons idx-buttons2 idx-btn-pad">שלח לחבר</a><span class="btn_icon2"></span></div>
-                        <div class="span<?=$spani?> relative"><a href="javascript:void()" onClick="window.open('http://www.facebook.com/sharer.php?u=http://<?=$_SERVER['SERVER_NAME']?><?=urldecode($_SERVER['REQUEST_URI'])?>','Share Lasso','toolbar=no,width=500,height=200,left=500,top=200,status=no,scrollbars=no,resize=no');return false" target="_blank" class="fb-like-plc idx-buttons idx-buttons1 idx-btn-pad">שתף</a><span class="btn_icon3"></span></div>
+                        <div class="span<?=$spani?> relative"><a href="javascript:void()" onClick="window.open('https://www.facebook.com/sharer.php?u=https://<?=$_SERVER['SERVER_NAME']?><?=urldecode($_SERVER['REQUEST_URI'])?>','Share Lasso','toolbar=no,width=500,height=200,left=500,top=200,status=no,scrollbars=no,resize=no');return false" target="_blank" class="fb-like-plc idx-buttons idx-buttons1 idx-btn-pad">שתף</a><span class="btn_icon3"></span></div>
                     </div>
         
               </div>
@@ -271,7 +271,7 @@ if ($_SERVER['REQUEST_URI']!='/404.php') {
                         $image = mysql_fetch_assoc($database->query("SELECT image FROM gallery WHERE sub = '{$row['id']}' AND front = 'yes'"));		
                     ?>
                     <li<? /*if ($i==0) { ?> class="no-margin"<? } */?>>
-                        <span class="thumb"><a href="<?=$link?>"><img src="http://www.lasso.co.il<?=$root.$image['image']?>" alt="<?=$row['name']?>" width="127" height="124" /></a></span>
+                        <span class="thumb"><a href="<?=$link?>"><img src="https://www.lasso.co.il<?=$root.$image['image']?>" alt="<?=$row['name']?>" width="127" height="124" /></a></span>
                         <div class="caption"><a href="<?=$link?>"><?=$row['name']?></a></div>
                     </li>
                     <?

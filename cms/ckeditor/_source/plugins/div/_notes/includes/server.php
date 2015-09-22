@@ -1,7 +1,7 @@
 <? 
 if (strpos($_SERVER['REQUEST_URI'],'index.php')!==false) {
 	header( "HTTP/1.1 301 Moved Permanently" );
-	header("location: http://".$_SERVER['SERVER_NAME']);	
+	header("location: https://".$_SERVER['SERVER_NAME']);
 }
 $s = strrpos($_SERVER['REQUEST_URI'], "/");
 $t = strrpos($_SERVER['REQUEST_URI'], "?");

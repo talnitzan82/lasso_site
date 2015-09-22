@@ -19,14 +19,28 @@ if (count($dots_count) < 4) {
 if (preg_match('/m.lasso/',$_SERVER['HTTP_REFERER'])) {
 	$_SESSION['mobile']='no';
 }
+//
+//if( $detect->isMobile() && !$detect->isTablet() && $_SESSION['mobile']!='no'){
+//	$dots_count = explode(".",$_SERVER['SERVER_NAME']);
+//	if ($dots_count[0]=='www') {
+//		$dots_count[0]='m';
+//	} else {
+//		array_unshift($dots_count,'m');
+//	}
+//	header("location: http://".implode(".",$dots_count).$_SERVER['REQUEST_URI']);
+//}
+
 
 if( $detect->isMobile() && !$detect->isTablet() && $_SESSION['mobile']!='no'){
-	$dots_count = explode(".",$_SERVER['SERVER_NAME']);
-	if ($dots_count[0]=='www') {
-		$dots_count[0]='m';
-	} else {
-		array_unshift($dots_count,'m');
-	}
-	header("location: http://".implode(".",$dots_count).$_SERVER['REQUEST_URI']);
+    $dots_count = explode(".",$_SERVER['SERVER_NAME']);
+    $slash_count = explode("/",$_SERVER['SERVER_NAME']);
+    if ($slash_count[1] != 'm') {
+        if ($dots_count[0] == 'www') {
+            $slash_count[0] = 'www.lasso.co.il/m';
+        } else {
+            $slash_count[0] = 'lasso.co.il/m';
+        }
+        header("location: https://" . implode("/", $slash_count) . $_SERVER['REQUEST_URI']);
+    }
 }
 ?>

@@ -17,7 +17,7 @@ $detect = new Mobile_Detect;
 <?
 $image = mysql_fetch_assoc($database->query("SELECT `image` FROM gallery WHERE sub = '{$page['id']}' AND logo = 'yes' LIMIT 1"));
 ?>
-<meta property="og:image" content="http://www.lasso.co.il/<?=$image['image']?>">
+<meta property="og:image" content="https://www.lasso.co.il/<?=$image['image']?>">
 <!--[if (gte IE 9)|!(IE)]>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -305,7 +305,7 @@ $image = mysql_fetch_assoc($database->query("SELECT `image`,`repeat` FROM galler
                             <div class="fb-like" data-send="false" data-layout="standard" data-width="450" data-show-faces="false" data-colorscheme="light" data-action="like"></div>       
                         </div>
                         
-                        <a href="javascript:void()" onClick="window.open('http://www.facebook.com/sharer.php?u=http://<?=$_SERVER['SERVER_NAME']?><?=urldecode($_SERVER['REQUEST_URI'])?>','Share Lasso','toolbar=no,width=500,height=200,left=500,top=200,status=no,scrollbars=no,resize=no');return false" target="_blank" class="fb-like-plc"><img src="<?=$root?>img/fb-btn.gif" alt="שתף בפייסבוק" /></a>
+                        <a href="javascript:void()" onClick="window.open('https://www.facebook.com/sharer.php?u=https://<?=$_SERVER['SERVER_NAME']?><?=urldecode($_SERVER['REQUEST_URI'])?>','Share Lasso','toolbar=no,width=500,height=200,left=500,top=200,status=no,scrollbars=no,resize=no');return false" target="_blank" class="fb-like-plc"><img src="<?=$root?>img/fb-btn.gif" alt="שתף בפייסבוק" /></a>
                         <div class="SENDCONT">
                         <? include "includes/send-to-friend.php"; ?>
                         </div>

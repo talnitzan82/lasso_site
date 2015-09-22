@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_URI']!='') {
 if (!isset($page)) {	
 
 	header( "HTTP/1.1 301 Moved Permanently" );
-	header('location: http://'.$_SERVER['SERVER_NAME'].'/404.php');
+	header('location: https://'.$_SERVER['SERVER_NAME'].'/404.php');
 
 } else {
 	$template = explode("?",$page['template']);
@@ -104,7 +104,7 @@ if (!isset($page)) {
 	if ($set_template==false) {
 
 		header( "HTTP/1.1 301 Moved Permanently" );
-		header('location: http://'.$_SERVER['SERVER_NAME'].'/404.php');
+		header('location: https://'.$_SERVER['SERVER_NAME'].'/404.php');
 
 	}
 	

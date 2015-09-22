@@ -11,7 +11,7 @@ $global = $database->fetch("SELECT * FROM global WHERE language = '$lang'");
 $dots_count = explode(".",$_SERVER['SERVER_NAME']);
 if (count($dots_count) < 4) {
 	header("HTTP/1.1 301 Moved Permanently");
-	header("location: http://www.".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);	
+	header("location: https://www.".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']);
 }
 ### HANDLE WWW ####
 ?>

@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_URI']!='/404.php') {
               $query = $database->query($sql);
               while($row=mysql_fetch_assoc($query)) {
               ?>
-              <li><a href="../<?=$row['image']?>" class="touchthumb"><img src="https://www.lasso.co.il/<?=$row['image']?>" alt="<?=$page['name']?>" /></a></li>
+              <li><a href="../<?=$row['image']?>" class="touchthumb"><img class="www" src="../<?=$row['image']?>" alt="<?=$page['name']?>" /></a></li>
               <?
               }
               ?>
